@@ -1,7 +1,7 @@
 # ESP8266-FeldHell
 ESP8266 and Si5351 FeldHell Beacon
 
-Simple Feld Hell beacon for Arduino, with the Etherkit Si5351a breakout board, by Jason Milldrum NT7S, but works flawlessly with the cheaps chinese Si5351 breakout modules too.
+Simple Feld Hell beacon for ESP8266, with the Etherkit Si5351a breakout board, by Jason Milldrum NT7S, but works flawlessly with the cheaps chinese Si5351 breakout modules too.
 
 This release is adapted for ESP8266, and uses the timer1 hardware interrupt for the required precise timing.
 For the moment i've powered off the WiFi, maybe in a future release i'll use it for something like an interactive webpage to change frequency and text of the beacon, or something else who knows. This little piece of code is born as an exercise in using timer1 the only one that you can use safely in ESP8266 without worry about hangs the system (timer0 is shared with the whole wifi and tcp/ip system).
